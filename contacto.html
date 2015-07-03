@@ -17,27 +17,26 @@
         <h2 class="intro-text text-center">Mandanos <strong>tu consulta</strong> </h2>
         <hr>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, vitae, distinctio, possimus repudiandae cupiditate ipsum excepturi dicta neque eaque voluptates tempora veniam esse earum sapiente optio deleniti consequuntur eos voluptatem.</p>
-        <form role="form">
+        <form role="form" method="post" action="enviarconsulta.php">
           <div class="row">
             <div class="form-group col-lg-4">
               <label>Nombre</label>
-              <input type="text" class="form-control">
+              <input type="text" name="nombre" class="form-control" />
             </div>
             <div class="form-group col-lg-4">
               <label>Email</label>
-              <input type="email" class="form-control">
+              <input type="email" name="email" class="form-control" />
             </div>
             <div class="form-group col-lg-4">
               <label>Telefono</label>
-              <input type="tel" class="form-control">
+              <input type="tel" name="telefono" class="form-control" />
             </div>
             <div class="clearfix"></div>
             <div class="form-group col-lg-12">
               <label>Mensaje</label>
-              <textarea class="form-control" rows="6"></textarea>
+              <textarea class="form-control" name="consulta" rows="6" onblur="activarEnviar"></textarea>
             </div>
             <div class="form-group col-lg-12">
-              <input type="hidden" name="save" value="contact">
               <button type="submit" class="btn btn-default">Enviar</button>
             </div>
           </div>
@@ -55,6 +54,7 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 <script>
+	
 	$(function(){
       $("#navbar").load("lib/navbar.html"); 
 	  $("#footer").load("lib/footer.html"); 
