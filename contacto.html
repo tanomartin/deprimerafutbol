@@ -5,10 +5,8 @@
 <div id="cabezal"></div>
 <!-- Navigation -->
 <nav class="navbar navbar-default" role="navigation">
-<div id="navbar"></div>
+  <div id="navbar"></div>
 </nav>
-
-
 <div class="container">
   <div class="row">
     <div class="box">
@@ -20,12 +18,12 @@
         <form role="form" method="post" action="enviarconsulta.php">
           <div class="row">
             <div class="form-group col-lg-4">
-              <label>Nombre</label>
-              <input type="text" name="nombre" class="form-control" />
+              <label>Nombre <font color="blue">*</font></label>
+              <input type="text" name="nombre" class="form-control" required/>
             </div>
             <div class="form-group col-lg-4">
-              <label>Email</label>
-              <input type="email" name="email" class="form-control" />
+              <label>Email <font color="blue">*</font></label>
+              <input type="email" name="email" class="form-control" required/>
             </div>
             <div class="form-group col-lg-4">
               <label>Telefono</label>
@@ -33,21 +31,30 @@
             </div>
             <div class="clearfix"></div>
             <div class="form-group col-lg-12">
-              <label>Mensaje</label>
-              <textarea class="form-control" name="mensaje" rows="6" onBlur="activarEnviar"></textarea>
+              <label>Mensaje <font color="blue">*</font></label>
+              <textarea style="resize:none" class="form-control" name="mensaje" rows="6" required></textarea>
             </div>
             <div class="form-group col-lg-12">
-              <button type="submit" class="btn btn-default">Enviar</button>
+			  <div class="col-lg-6">
+              	<button type="submit" class="btn btn-primary">Enviar</button>   
+			  </div>
+			  <div class="col-lg-6 text-right">
+			 	 <font color="#0000FF"> *</font>  Campos Requeridos 
+			  </div>
             </div>
           </div>
         </form>
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="box" align="center">
+      <div class="col-sm-6"> <a href="http://www.facebook.com.ar" target="_blank"><img class="img-responsive" style="width:50%" src="img/contacto/siguenosfacebook.png" alt="" title="Facebook"></a> </div>
+      <div class="col-sm-6"> <a href="http://www.mercadolibre.com.ar" target="_blank"><img class="img-responsive" style="width:50%" src="img/contacto/estamosenmercadolibre.png" alt="" title="Mercado Libre"></a> </div>
+    </div>
+  </div>
 </div>
 <!-- /.container -->
-
-
 <div id="footer"></div>
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
