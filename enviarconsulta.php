@@ -1,7 +1,7 @@
 <?php
 
 	// Casilla detino
-	$casilla_destino = "tanomartin05@gmail.com";
+	$casilla_destino = "consultas@lavictoriatrofeos.com.ar";
 	$nombre = (isset($_POST["nombre"]))? $_POST["nombre"] : "";
 	$email = (isset($_POST["email"]))? $_POST["email"] : "";
 	$telefono = (isset($_POST["telefono"]))? $_POST["telefono"] : "";
